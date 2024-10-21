@@ -12,18 +12,6 @@ const addItem = async (req, res) => {
     const size = req.body.size.split(",")
 
     /* The request.body must have all these values */
-    const item = {
-        name: req.body.name,
-        category: req.body.category,
-        type: req.body.type,
-        color: req.body.color,
-        description: req.body.description,
-        price: req.body.price,
-        image: req.files,
-        size: size,
-        highlights: highlights,
-        detail: req.body.detail
-    }
         const item = {
         name: req.body.name,
         category: req.body.category,
