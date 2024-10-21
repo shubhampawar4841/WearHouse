@@ -24,6 +24,18 @@ const addItem = async (req, res) => {
         highlights: highlights,
         detail: req.body.detail
     }
+        const item = {
+        name: req.body.name,
+        category: req.body.category,
+        type: req.body.type,
+        color: req.body.color,
+        description: req.body.description,
+        price: req.body.price,
+        image: req.files,
+        size: size,
+        highlights: highlights,
+        detail: req.body.detail
+    }
 
     if(item){
         await Item.create(item)
