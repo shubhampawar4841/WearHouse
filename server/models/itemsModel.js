@@ -24,6 +24,14 @@ const itemSchema = mongoose.Schema(
             type: String,
             required: true
         },
+        price: {
+            type: Number,
+            required: true
+        },
+        size: {
+            type: Array,
+            required: true
+        },
         
         highlights: {
             type: Array,
